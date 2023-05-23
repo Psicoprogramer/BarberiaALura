@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    
+}
+html{
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    box-shadow: 2px 2px 10px #0404045c;
+    border-bottom: 1px solid black;
+}
+
+.titulo-principal {
+    padding-left: 30px;
+}
+
+#banner {
+    width: 100%;
+}
+
+.principal {
+    background: #CCCCCC;
+    padding: 20px;
+}
+
+.titulo-centralizado {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+em strong {
+    color: red;
+}
+
+#mision {
+    font-size: 20px;
+}
+
+.diferenciales {
+    background: #FFFFFF;
+    padding: 30px;
+}
+
+.items {
+    font-style: italic;
+}
+
+ul {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.imagenDiferenciales {
+    width: 50%;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    background: gold;
+
+}
+
+/* Iconos de navegacion del header  */
+.navegation {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* Lista del header */
+.navegation ul {
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    width: 100%;
+    z-index: 3;
+}
+
+.navegation ul li {
+    margin-left: 20px;
+
+}
+
+/* Los elementos de la lista son etiquetas  A */
+.a-contendio {
+    text-decoration: none;
+    color: black;
+    text-shadow: 2px 1px 2px rgba(72, 8, 8, 0.515);
+    padding: 10px;
+    font-family: fantasy;
+    color: brown;
+    font-size: larger;
+    font-weight: bold;
+
+}
+
+.a-contendio:hover {
+
+    background-color: brown;
+    border-radius: 20pc;
+    /* border-bottom: 1px solid black; */
+    color: white;
+    box-shadow: inset 6px 4px 3px black, 2px 2px 12px 0px black;
+
+
+}
+
+/* Contenedor icono contenido header */
+.contendor-icon {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 11px;
+
+}
+
+/*  icono de header */
+.contendor-icon img {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 10pc;
+    border: 1px solid brown;
+    box-shadow: 1px 2px 3px 1px #d51d31;
+}
+
+.contendor-icon img:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 5px 2px black;
+}
+
+/* menu mobile  */
+/* Contenedor del menu */
+.section-mobile {
+    position: absolute;
+    right: 0;
+    top: 98px;
+    height: auto;
+    width: 421px;
+}
+
+.elemento-mobile {
+    display: flex;
+    background: gold;
+    width: 100%;
+    height: 129px;
+    align-items: center;
+    /* border-radius: 1pc; */
+    justify-content: space-around;
+    border-radius: 1px 1px 16px 16px;
+    box-shadow: 0px 1px 5px 2px brown, inset 5px -1px 6px 1px black;
+    border: 4px solid;
+}
+
+
+.container-Logo {
+    width: 100%;
+    height: 8pc;
+    display: flex;
+    flex-direction: column;
+    font-family: fantasy;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.container-Logo p {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.5rem;
+}
+
+/* Contenedor de categorias de productos  */
+
+.main-container_product{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 10%;
+    background: gold;
+    box-shadow: 1px 4px 3px 4px brown;
+    margin-bottom: 16px;
+    height: 90%;
+}
+.main-container_product:hover{
+    box-shadow: inset 1px 1px 7px 5px brown;
+    cursor: pointer;
+}
+
+.container-name{
+    font-family: 'Shadows Into Light';
+    font-size: 2rem;
+    margin-bottom: 6px;
+    color: brown;
+}
+.container-name:hover{
+    font-size: 2rem;
+}
+
+.valueProduct {
+    font-family: 'Font Awesome 6 Free';
+    font-weight: bolder;
+}
+
+.valueDescription {
+    font-family: 'Shadows Into Light';
+    font-size: 1rem;
+}
+
+/* Tamaño y transparencia de la img */
+.logo {
+    width: 240px;
+    height: 240px;
+    mix-blend-mode: color-burn;
+}
+
+/* clase para cerrar */
+.disable {
+    display: none;
+}
+
+/* Footer */
+.footer-container {
+    width: 100%;
+    height: 10pc;
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./imagenes/bg.jpg");
+}
+.footer-container img{
+    width: 100px;
+}
+
+/* version mobile first */
+
+/* Tamaño menor */
+
+/* Tamaño 540 - 700 */
+
+@media (max-width: 540px) {
+    .section-mobile {
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+    }
+
+    .container-Logo p {
+        display: none;
+    }
+
+    .elemento-mobile {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .a-contendio {
+        font-size: 2rem;
+    }
+
+}
+
+/* minimo del container uso minimo para hacer respansivo los contenedores  */
+
+@media (min-width: 200px) {
+    .main-container {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        margin-top: 71px;
+    }
+
+}
+
+@media (min-width: 500px) {
+    .main-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 800px) {
+    .main-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/* Pantalla de 700 -- 1300 */
+@media (max-width: 700px) {
+    .header {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+        background: gold;
+        height: 8pc;
+    }
+
+    .container-Logo img {
+        background-color: brown;
+        border-radius: 20pc;
+        border-bottom: 1px solid black;
+        color: white;
+        box-shadow: inset 6px 3px 3px 0px black;
+        z-index: 3;
+    }
+
+    .container-Logo p {
+        width: 100%;
+
+    }
+
+    .navegation ul {
+        display: none;
+    }
+
+    /* .main-container {
+        grid-template-columns: repeat(2, 1fr);
+
+    } */
+}
+
+
+
+/* Version destock - table */
+@media (max-width:1300px) {
+
+    .header {
+
+        height: 6pc;
+
+    }
+
+    .container-Logo {
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+    }
+
+    .navegation {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: flex-end;
+        justify-content: center;
+        /* margin: 43px; */
+        height: 40px;
+    }
+
+    .navegation ul {
+        width: 100%;
+        justify-content: center;
+        margin-right: 10px;
+        align-items: center;
+    }
+
+    .container-Logo img {
+        width: 100px;
+        height: 140px;
+        position: absolute;
+        top: 13px;
+        left: 18px;
+        border: 1px solid;
+        border-radius: 20px;
+        background: brown;
+        opacity: 88%;
+        box-shadow: inset 5px 4px 18px 0px black;
+    }
+
+}
