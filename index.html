@@ -1,50 +1,84 @@
 <!DOCTYPE html>
 
 <html lang="es">
-    
-    <head>
 
-        <meta charset="UTF-8"> 
-        <title>Barbería Alura</title>
-        <link rel="stylesheet" href="style.css">
-    
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbería Alura</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
 
-    <body>
+</head>
 
-        <header>
-            <h1 class="titulo-principal">Barbería Alura</h1>
-        </header>
-
+<body>
+    <header class="header">
+        <div class="container-Logo">
+            <img src="./imagenes/logo.png" alt="logo barberia">
+            <p>Tu Barberia de confianza <i class="fa-solid fa-scissors" style="color: #f00a15;"></i></p>
+        </div>
+        <div class="contendor-icon">
+            <img id="faro-menu" src="./imagenes/R (1).jpeg" alt="menu">
+        </div>
+    </header>
+    <nav class="section-mobile disable ">
+        <ul class="elemento-mobile">
+            <li><a class="a-contendio" href="./index.html">Home</a> </li>
+            <li><a class="a-contendio" href="./contenido.html"> Producto </a></li>
+            <li><a class="a-contendio" href="./contacto.html"> Contacto </a></li>
+        </ul>
+    </nav>
+    <picture class="banner-contaniner">
         <img id="banner" src="banner/banner.jpg" alt="banner">
-        
-        <div class="principal">
+    </picture>
 
-            <h2 class="titulo-centralizado">Sobre la Barbería Alura</h2>
+    <h2 class="titulo-principal">Sobre la Barbería Alura</h2>
+    
+    <main class="principal">
 
-            <p>Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong> trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente.</p>
+        <img class="utencilios-principal" src="./imagenes/utensilios[1].jpeg" alt="utencilios comunes de un barbero">
+        <p class="parrafos">Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong> trae para el mercado lo que hay de
+            mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista
+            nuevos clientes diariamente.</p>
 
-            <p id="mision"><em>Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes"</strong>.</em></p>
+        <p class="parrafos" ><em>Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros
+                    clientes"</strong>.</em></p>
 
-            <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes.</p> 
+        <p class="parrafos">Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el
+            mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un
+            padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes.</p>
 
+    </main>
+    <section class="map">
+        <h3 class="titulo-principal"> Nuestra ubicacion</h3>
+        <p class="parrafos">Nuestra barberia esta ubicada en el centro de la cuidad</p>
+        <iframe class="iframe-map" title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.9172748529018!2d-74.80041472477424!3d10.969616689191161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42d45d37a5857%3A0x9640ff0ee6ce27b2!2sCl.%2053b%20%2323-69%2C%20Suroccidente%2C%20Barranquilla%2C%20Atl%C3%A1ntico!5e0!3m2!1ses!2sco!4v1685446811362!5m2!1ses!2sco" width="80%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="diferenciales">
+
+        <h3 class="titulo-principal">Diferenciales</h3>
+        <div class="container-diferenciales">
+        <ul class="ul-items">
+            <li class="items">Atención personalizada a los clientes</li>
+            <li class="items">Espacio diferenciado</li>
+            <li class="items">Localización</li>
+            <li class="items">Profesesionales calificados</li>
+            <li class="items">Puntualidad</li>
+            <li class="items">Limpieza</li>
+        </ul>
+
+        <img src="diferenciales/diferenciales.jpg" class="imagenDiferenciales" alt="Imagen diferencial">
+    </div>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
+    </section>
+    <footer class="footer-container">
+        <img src="./imagenes/logo-blanco.png" alt="">
+    </footer>
+<script src="./main.js"></script>
+</body>
 
-        <div class="diferenciales">
-
-            <h3 class="titulo-centralizado">Diferenciales</h3>
-        
-            <ul>
-                <li class="items">Atención personalizada a los clientes</li>
-                <li class="items">Espacio diferenciado</li>
-                <li class="items">Localización</li>
-                <li class="items">Profesesionales calificados</li>
-            </ul>
-
-            <img src="diferenciales/diferenciales.jpg" class="imagenDiferenciales" alt="Imagen diferencial">
-
-        </div>
-        
-        
-    </body>
 </html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contenido</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="reset.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="container-Logo">
+                <img src="./imagenes/logo.png" alt="logo barberia">
+                <p>Tu Barberia de confianza <i class="fa-solid fa-scissors" style="color: #f00a15;"></i></p>
+            </div>
+            <div class="contendor-icon">
+                <img id="faro-menu" src="./imagenes/R (1).jpeg" alt="menu">
+            </div>
+        </header>
+        <nav class="section-mobile disable ">
+            <ul class="elemento-mobile">
+                <li><a class="a-contendio" href="./index.html">Home</a> </li>
+                <li><a class="a-contendio" href="./contenido.html"> Producto </a></li>
+                <li><a class="a-contendio" href="./contacto.html"> Contacto </a></li>
+            </ul>
+        </nav>
+
+        <fieldset class="section-content">
+            <form>
+                <label for="nombreCompleto">Nombre y apellido</label>
+                <input type="text" id="nombreCompleto" placeholder="Escriba su nombre completo" required>
+
+                <label for="mail">Correo</label>
+                <input type="email" id="mail" placeholder="Digite su email" required>
+
+                <label for="phone">Telefono</label>
+                <input type="tel" id="phone" placeholder="Digite su telefono" required>
+
+                <label for="textArea">Escribe su mensaje</label>
+                <textarea name="Mensaje" id="textArea" cols="30" rows="10" placeholder="Digite su mensaje"></textarea>
+
+                <label class = "label-medioContacto" for="Mensaje">Escoja un medio de contacto</label>
+                <div class="radios">
+                <label for="radio-email">Email</label>
+                <input type="radio"  name="contacto" id="radio-email" value="Email" >
+                <label for="radio-wsp">whatsApp</label>
+                <input type="radio"  name="contacto" id="radio-wsp" value="wsp" checked>
+                <label for="radio-phone">Phone</label>
+                <input type="radio"  name="contacto" id="radio-phone" value="phone">
+                </div>
+
+               <label class="label-checkbox" for="label-checkbox">¿Le Gustaria recibir novedades y promociones de la barberia alura? <input type="checkbox" name="contacto" id="label-checkbox" checked></label>
+            <fieldset class="select-form">
+                <label for="selec-horario">¿Que horario le gustaria ser atendido?</label>
+                <select name="horario" id="selec-horario">
+                    <option >Tarde</option>
+                    <option >Mañana</option>
+                    <option >Noche</option>
+                </select>
+            </fieldset>
+            <table class="form-table">
+                <tr>
+                    <td class="td-title">Dias</td>
+                    <td class="td-title">Horarios</td>
+                </tr>
+                <tr>
+                    <td>Lunes</td>
+                    <td>08:00 - 22:00 </td>
+                </tr>
+                <tr>
+                    <td>miercoles</td>
+                    <td>08:00 - 21:00 </td>
+                </tr>
+                <tr>
+                    <td>viernes</td>
+                    <td>08:00 - 23:00 </td>
+                </tr>
+            </table>
+                <input type="submit" id="btn-button" value="Enviar formulario">
+            </form>
+        </fieldset>
+ 
+          
+
+        <footer class="footer-container">
+            <img src="./imagenes/logo-blanco.png" alt="">
+        </footer>
+
+        <script src="https://kit.fontawesome.com/31d16a85ff.js" crossorigin="anonymous"></script>
+        <script src="./main.js"></script>
+    </body>
+
+    </html>
+</body>
+
+</html>
